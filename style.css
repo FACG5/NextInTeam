@@ -1,0 +1,258 @@
+
+	.about > p{
+	margin-bottom: 4px;
+  font-family: sans-serif;
+	}
+	.about{
+	text-align: center;
+	width: 100%;
+	background-color: #a0c4df;
+	/*#487995*/
+	padding-top: 3%;
+	padding-bottom: 3%;
+	}
+	body{
+	    margin-left: 0;
+	    margin-right: 0;
+	}
+	.container-fox{
+	    padding-top: 7px;
+	    background-color: #487995;
+	    padding-left: 10%;
+	    padding-right: 10%;
+	}
+    .container-fox h1{
+        text-align: center;
+    }
+    .container-contact{
+        padding-top: 4%;
+        padding-bottom: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .item{
+        padding-left: 5%;/*7%*/
+        padding-right: 5%;
+    }
+    .item img{
+        width: 200px;
+        border-radius: 50%;
+    }
+    .item h2{
+        border-width:1px;
+        border-style: solid;
+        border-color: black;
+        margin: 10%;
+        font-family: Monospace;
+        text-align: center;
+    }
+    .item p:after {
+        display: block;
+        height: 3px;
+        background-color: black;
+        content: " ";
+        width: 100px;
+        margin: 12px auto;
+    }
+    .item p{
+        text-align: center;
+    }
+
+	/*hhhhhhhhhh*/
+	nav{
+		display: grid;
+		grid-template-columns: 15% 90%;
+	}
+	nav img {
+		width:100%;
+		height: 110px;
+
+	}
+	ul{
+  		background-color: black;
+  		color: white;
+      font-family: sans-serif;
+
+	}
+	ul>li{
+  		margin-right: 10px;
+  		padding: 30px;
+	}
+	ul>li:hover {
+		background-color: white;
+		transition: 300ms;
+		color: black;
+		padding: 30px;
+	}
+
+	ul>li:hover > a{
+		color: black;
+	}
+	nav ul li {
+		display: inline-block;
+	}
+	.home {
+		height: 600px;
+		background: url('1.jpg');
+		background-size: cover;
+		background-position: center;
+	}
+	.home a{
+		color:white;
+		text-decoration: none;
+	}
+	h1{
+		text-align: center;
+		font-family: sans-serif;
+		font-size: 50px;
+	}
+	h3{
+		margin: 0 auto;
+		text-align: center;
+		font-family: sans-serif;
+		padding-top: 35px;
+	}
+	@media all and (max-width: 600px) {
+		nav ul li {
+			display:  block;
+		}
+		nav{
+			grid-template-columns: 50% 50%;
+		}
+		header{
+			display: block;
+			font-family: sans-serif;
+			font-size: 20px;
+		}
+		h1{
+			margin: 0 auto;
+			text-align: center;
+			padding-top: 90px;
+		}
+		h3{
+			display: none;
+		}
+	}
+  body,html {
+    padding: 0;
+    margin: 0;
+  }
+  * {
+    box-sizing: border-box;
+  }
+
+  .concat-section {
+    background:url('./anfal-shamsudeen-30302-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  .container {
+      margin: 0 auto;
+      max-width: 1170px;
+  }
+
+  .container::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  .contact-title{
+    font-size: 32px;
+    color: white;
+    padding-top: 80px;
+    padding-left: 20px;
+
+  }
+
+  .concat-section p{
+    color: white;
+    padding-top: 30px;
+    padding-left: 20px;
+    font-size: 22px;
+    padding-bottom: 60px;
+
+  }
+  .concat-section h5{
+    color:white;
+    padding-left: 30px;
+  }
+
+
+  .contact-box {
+      height: 580px;
+      background:rgba(0, 0, 0, 0.3);
+      box-sizing: border-box;
+      color: #fff;
+      padding: 20px;
+      float: left;
+      width: 50%;
+  }
+
+  .concat-section h1{
+      margin: 0;
+      padding: 0 0 20px;
+      text-align: center;
+      font-size: 25px;
+  }
+
+  .contact-box p{
+      margin: 0;
+      padding: 0;
+      font-weight: bold;
+  }
+
+  .contact-box  input{
+      width: 100%;
+      margin-bottom: 30px;
+  }
+
+  .contact-box input[type="text"]{
+      border: 0;
+      border-bottom: 1px solid #fff ;
+      background: transparent ;
+      outline: none;
+      height: 40px;
+      color:#fff;
+      font-size: 16px;
+  }
+  .contact-box textarea{
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .contact-box input[type="submit"]{
+      border:none;
+      outline: none;
+      height: 40px;
+      background-color:rgb(1,63,115);
+      border-radius: 20px;
+      color: #fff;
+      font-size: 18px;
+
+  }
+
+  .contact-box input[type="submit"]:hover{
+      cursor: pointer;
+      background: #092366;
+  }
+  .contact-us {
+    float: left;
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media only screen and (max-width: 600px) {
+
+    .contact-us{
+      display: none;
+    }
+    .contact-box{
+          width: 100%;
+    }
+  }
